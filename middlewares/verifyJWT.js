@@ -21,16 +21,4 @@ export function verifyJWT(request, reply, done) {
   }
 }
 
-export function validatePlayer(request, reply, done) {
-  const { name, score } = request.body;
-
-  if (!name || typeof name !== 'string') {
-    return reply.code(400).send({ error: 'Name is required and must be a string.' });
-  }
-
-  if (typeof score !== 'number') {
-    return reply.code(400).send({ error: 'Score must be a number.' });
-  }
-
-  done();
-}
+// Artık validatePlayer fonksiyonuna gerek yok - JSON Schema kullanıyoruz

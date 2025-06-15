@@ -89,8 +89,8 @@ fastify_tutorial2/
 ├── routes/           # Route declarations
 ├── controllers/      # Request handlers
 ├── services/         # Business logic & DB access
-├── middlewares/      # JWT & validation middleware
+├── middlewares/      # JWT middleware
+├── schemas/          # JSON Schema definitions for validation
 ├── models/           # SQL schema definitions
 └── data.sqlite       # SQLite database file (generated)
 ```
-

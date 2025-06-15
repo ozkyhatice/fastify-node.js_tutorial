@@ -21,9 +21,13 @@ await fastify.register(dbPlugin);
 await fastify.register(authRoutes);
 await fastify.register(playerRoutes);
 
-fastify.listen({ port: 3000 }, err => {
-  if (err) {
-    fastify.log.error(err);
-    process.exit(1);
-  }
-});
+const start = async () => {
+    try{
+        await fastify.listen({port:3000})
+        fastify.log.info('Server is running on port 3000')
+    }catch(err){
+        fastify.log.error(err)
+        process.exit(1)
+    }
+}
+start()

@@ -4,6 +4,7 @@ import { open } from 'sqlite';
 import { CREATE_SQL as PLAYER_SQL } from '../models/players.js';
 import { CREATE_USER_SQL } from '../models/users.js';
 
+
 export default fp(async function (fastify, opts) {
   const db = await open({
     filename: './data.sqlite',
