@@ -94,6 +94,3 @@ fastify_tutorial2/
 └── data.sqlite       # SQLite database file (generated)
 ```
 
-## License
-
-ISC – feel free to use, modify, and distribute. 
